@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title> Online Movie Ticket Booking</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href='./movie.css'>
+    </head>
+    <body>
+        <div class="seatStructure">
+            <center>
+                <table id="seatsBlock">
+                    <p id="notification"></p>
+                    <tr>
+                        <td colspan="14"><div class="screen">SCREEN</div></td>
+                    </tr>
+                    <tr id='rowNumber'></tr>
+                </table>
+            </center>
+        </div>
+        <div class='pre-definer'>
+            <div class="smallBox greenBox">Selected Seat</div>
+            <div class="smallBox greyBox">Blocked Seat</div>
+            <div class="smallBox emptyBox">Empty Seat</div>
+        </div>
+        <div class="pre-definer-rows">Gold Rows - A, B, C, D, E</div>
+        <div class="pre-definer-rows">Diamond Rows - F, G, H, I, J</div>
+        <div id='selected-seats' class="pre-definer-rows"></div>
+        <div id='total-price' class="pre-definer-rows"></div>
+    </body>
+    <script src='./movie.js'></script> 
+</html>
